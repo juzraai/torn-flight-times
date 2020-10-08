@@ -5,8 +5,8 @@
 // @author       juzraai
 // @license      MIT
 // @namespace    https://juzraai.github.io/
-// @updateURL    https://raw.githubusercontent.com/juzraai/torn-flight-times/main/torn-flight-times.js
-// @downloadURL  https://raw.githubusercontent.com/juzraai/torn-flight-times/main/torn-flight-times.js
+// @updateURL    https://raw.githubusercontent.com/juzraai/torn-flight-times/main/torn-flight-times.user.js
+// @downloadURL  https://raw.githubusercontent.com/juzraai/torn-flight-times/main/torn-flight-times.user.js
 // @supportURL   https://github.com/juzraai/torn-flight-times/issues
 // @match        https://www.torn.com/travelagency.php
 // @grant        none
