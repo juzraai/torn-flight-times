@@ -30,6 +30,9 @@ function addFlightTimes() {
 	// This will be our new element:
 	let flightTimesEl = document.querySelector('[aria-expanded=true] .travel-container .flight-time .flight-times');
 
+	// This will be the parent, also this contains the base information: "Flight Time"
+	const flightTimeEl = document.querySelector('[aria-expanded=true] .travel-container .flight-time');
+
 	// If it doesn't exist:
 	if (!flightTimesEl) {
 
@@ -39,7 +42,6 @@ function addFlightTimes() {
 		flightTimesEl.style.flexGrow = 1;
 
 		// Style the containers:
-		const flightTimeEl = document.querySelector('[aria-expanded=true] .travel-container .flight-time');
 		flightTimeEl.style.display = 'flex';
 		flightTimeEl.style.justifyContent = 'center';
 		flightTimeEl.style.flexWrap = 'wrap';
