@@ -69,6 +69,6 @@ function addFlightTimes() {
 	flightTimesEl.innerHTML = `Landings - ${formatTime(landTimeMs)}, ${formatTime(returnTimeMs)}`
 }
 
-// Refreshing constantly:
-setInterval(addFlightTimes, 500); // This is how we react to when user selects another city or flying mode.
-// TODO Would be nice to do it more efficiently :)
+// Refreshing constantly every .5 seconds:
+setInterval(addFlightTimes, 500); // This way flight times update as time goes by :)
+
