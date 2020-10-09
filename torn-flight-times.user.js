@@ -27,11 +27,11 @@ function formatTime(ms) {
  */
 function addFlightTimes() {
 
-	// This will be our new element:
-	let flightTimesEl = document.querySelector('[aria-expanded=true] .travel-container .flight-time .flight-times');
-
 	// This will be the parent, also this contains the base information: "Flight Time"
 	const flightTimeEl = document.querySelector('[aria-expanded=true] .travel-container .flight-time');
+
+	// This will be our new element:
+	let flightTimesEl = document.querySelector('[aria-expanded=true] .travel-container .flight-time .flight-times');
 
 	// If it doesn't exist:
 	if (!flightTimesEl) {
@@ -51,7 +51,7 @@ function addFlightTimes() {
 		travelInfoEl.style.alignItems = 'center';
 		travelInfoEl.style.display = 'flex';
 
-		// And add it:
+		// And our element:
 		flightTimeEl.append(flightTimesEl);
 	}
 
