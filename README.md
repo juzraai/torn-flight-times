@@ -1,8 +1,26 @@
 # TORN Flight Times
 
-Userscript for [TORN](https://www.torn.com/) to show landing times in your timezone before flying:
+*Userscript for [TORN](https://www.torn.com/) to show landing times in your timezone before and during the flight. No API key required.*
 
-![](screenshot.png)
+---
+
+
+
+## Features
+
+On the Travel Agency page, it shows the time of landing in the city and the time of landing back in Torn (supposing you won't spend time in the city), in your timezone, based on the displayed *"Flight Time"*:
+
+![](screenshot-travelagency.png)
+
+This helps you choose the best fitting destination for your RL schedule.
+
+Be aware that [actual flight time may be a bit different](https://wiki.torn.com/wiki/Travel), so always check the actual landing time after taking off:
+
+> There is a variance of 3% on flight times, this explains small discrepancies in the flight times you might notice.
+
+When flying, the script shows the actual landing time in your timezone, based on *"Remaining Flight Time"*:
+
+![](screenshot-flying.png)
 
 
 
@@ -17,12 +35,6 @@ If that doesn't happen automatically:
 1. Copy the contents of the linked userscript above
 2. Create a new script in GM/TM settings
 3. Paste the script contents and save
-
-
-
-## Future ideas
-
-- Show actual landing times on the flying page without API calls
 
 
 
