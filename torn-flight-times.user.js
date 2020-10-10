@@ -40,6 +40,7 @@ function addFlightTimes() {
 		flightTimesEl = document.createElement('span');
 		flightTimesEl.classList.add('flight-times');
 		flightTimesEl.style.flexGrow = 1;
+		flightTimesEl.title = 'These times are in your timezone. Always check actual landing times after takeoff since there is a variance of 3% on flight times!';
 
 		// Style the containers:
 		flightTimeEl.style.display = 'flex';
