@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Torn Flight Times
 // @version      2.0.0
-// @description  Show flight times before flying
+// @description  Show landing times in your timezone before flying
 // @author       juzraai
 // @license      MIT
 // @namespace    https://juzraai.github.io/
@@ -25,22 +25,22 @@ function formatTime(ms) {
 /**
  * Adds landing times below "Flight Time".
  */
-function addFlightTimes() {
+function addLandingTimes() {
 
 	// This will be the parent, also this contains the base information: "Flight Time"
 	const flightTimeEl = document.querySelector('[aria-expanded=true] .travel-container .flight-time');
 
 	// This will be our new element:
-	let flightTimesEl = document.querySelector('[aria-expanded=true] .travel-container .flight-time .flight-times');
+	let landingTimesEl = document.querySelector('[aria-expanded=true] .travel-container .flight-time .flight-times');
 
 	// If it doesn't exist:
-	if (!flightTimesEl) {
+	if (!landingTimesEl) {
 
 		// Create it:
-		flightTimesEl = document.createElement('span');
-		flightTimesEl.classList.add('flight-times');
-		flightTimesEl.style.flexGrow = 1;
-		flightTimesEl.title = 'These times are in your timezone. Always check actual landing times after takeoff since there is a variance of 3% on flight times!';
+		landingTimesEl = document.createElement('span');
+		landingTimesEl.classList.add('flight-times');
+		landingTimesEl.style.flexGrow = 1;
+		landingTimesEl.title = 'These times are in your timezone. Always check actual landing times after takeoff since there is a variance of 3% on flight times!';
 
 		// Style the containers:
 		flightTimeEl.style.display = 'flex';
@@ -53,7 +53,7 @@ function addFlightTimes() {
 		travelInfoEl.style.display = 'flex';
 
 		// And our element:
-		flightTimeEl.append(flightTimesEl);
+		flightTimeEl.append(landingTimesEl);
 	}
 
 	// Extract "Flight Time":
@@ -68,9 +68,9 @@ function addFlightTimes() {
 
 	// Display landing times:
 	const newContent = `Landings - ${formatTime(landTimeMs)}, ${formatTime(returnTimeMs)}`
-	if (flightTimesEl.innerHTML !== newContent) flightTimesEl.innerHTML = newContent;
+	if (landingTimesEl.innerHTML !== newContent) landingTimesEl.innerHTML = newContent;
 }
 
 // Refreshing constantly every .5 seconds:
-setInterval(addFlightTimes, 500); // This way flight times update as time goes by :)
+setInterval(addLandingTimes, 500); // This way flight times update as time goes by :)
 
