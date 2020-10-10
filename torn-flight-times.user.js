@@ -66,7 +66,8 @@ function addFlightTimes() {
 	const returnTimeMs = landTimeMs + flightTimeMs;
 
 	// Display landing times:
-	flightTimesEl.innerHTML = `Landings - ${formatTime(landTimeMs)}, ${formatTime(returnTimeMs)}`
+	const newContent = `Landings - ${formatTime(landTimeMs)}, ${formatTime(returnTimeMs)}`
+	if (flightTimesEl.innerHTML !== newContent) flightTimesEl.innerHTML = newContent;
 }
 
 // Refreshing constantly every .5 seconds:
