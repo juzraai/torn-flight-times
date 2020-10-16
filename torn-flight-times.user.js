@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Torn Flight Times
-// @version      2.2.0
+// @version      2.2.1
 // @description  Show landing times in your timezone before and during flying
 // @author       juzraai
 // @license      MIT
