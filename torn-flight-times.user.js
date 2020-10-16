@@ -8,8 +8,8 @@
 // @updateURL    https://raw.githubusercontent.com/juzraai/torn-flight-times/main/torn-flight-times.user.js
 // @downloadURL  https://raw.githubusercontent.com/juzraai/torn-flight-times/main/torn-flight-times.user.js
 // @supportURL   https://github.com/juzraai/torn-flight-times/issues
-// @match        https://www.torn.com/index.php
-// @match        https://www.torn.com/travelagency.php
+// @match        https://www.torn.com/index.php*
+// @match        https://www.torn.com/travelagency.php*
 // @grant        none
 // ==/UserScript==
 
